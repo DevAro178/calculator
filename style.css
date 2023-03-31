@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    padding: 10px;
+    font-family: 'Poppins';
+    background-color: #1e2326;
+    display: grid;
+    align-items: center;
+    justify-content: center;    
+}
+.calc
+{
+    background-color: transparent;
+    height: 650px;
+    width: 450px;
+    box-shadow: 0px 0px 105px 10px #000;
+    border-radius: 7px;
+}
+.screen
+{
+    height: 33%;
+    width: 100%;
+    background-color: #fcfcfc;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border: none;
+}
+.screen input
+{
+    font-family: 'Poppins';
+    padding: 33px 15px;
+    text-align: right;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+#s-history
+{
+    font-size: 20px;
+    color: #1e2326;
+}
+#s-calc
+{
+    font-size: 34px;
+}
+.keys
+{
+    height: 67%;
+    width: 100%;
+    background-color: #1e2326;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    color: #d1d2d2;
+    border: none;
+    font-size: 24px;
+}
+.digit,.digits,.equal
+{
+    border-right: 1px solid #303538;
+    border-bottom: 1px solid #303538;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: all 350ms;
+}
+.digits
+{
+    background-color: #5e4bb6;
+    border-right: none;
+}
+.equal
+{
+    color: #1e2326;
+    background-color: #fec208;
+    border-right: none;
+    border-bottom-right-radius: 7px;
+}
+.digit:hover
+{
+    background-color: #303538;
+    cursor: pointer;
+}
+.digits:hover
+{
+    background-color: #7e6ec3;
+    cursor: pointer;
+}
+.equal:hover
+{
+    background-color: #FED452;
+    cursor: pointer;
+}
